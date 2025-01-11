@@ -29,30 +29,25 @@
 
 ### 설치
 
-1. 저장소 클론:
+1. 저장소 클론
    ```bash
    git clone https://github.com/mansukim1125/programmatic-advertising-example.git
    cd programmatic-advertising-example
    ```
 
-2. 의존성 설치:
+2. 의존성 설치
    ```bash
    npm install
    ```
 
-3. TypeScript 코드 컴파일:
+3. TypeScript 코드 컴파일 및 실행
    ```bash
-   npm run build
-   ```
-
-4. 예제 실행:
-   ```bash
-   node dist/main.js
+   npm run start
    ```
 
 ### 예상 출력
 
-코드는 다음 과정을 시뮬레이션합니다:
+코드는 다음 과정을 시뮬레이션합니다.
 
 1. DMP를 통해 사용자 데이터 수집
 2. 광고 지면 및 광고 소재 등록
