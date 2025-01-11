@@ -2,6 +2,75 @@
 
 이 저장소는 Programmatic Advertising 생태계를 TypeScript로 구현한 예제입니다. 코드는 아래 구성요소를 포함합니다.
 
+```mermaid
+flowchart TD
+    A1[광고주 A] -->|광고 집행 요청| B1[DSP 1]
+    A2[광고주 B] -->|광고 집행 요청| B1
+    A3[광고주 C] -->|광고 집행 요청| B2[DSP 2]
+    A4[광고주 D] -->|광고 집행 요청| B3[DSP 3]
+    
+    B1 -->|입찰 참여| C[Ad Exchange]
+    B2 -->|입찰 참여| C
+    B3 -->|입찰 참여| C
+    
+    D1[퍼블리셔 1] -->|광고 인벤토리 제공| E1[SSP 1]
+    D2[퍼블리셔 2] -->|광고 인벤토리 제공| E1
+    D3[퍼블리셔 3] -->|광고 인벤토리 제공| E2[SSP 2]
+    
+    E1 -->|광고 인벤토리 등록| C
+    E2 -->|광고 인벤토리 등록| C
+    
+    C -->|실시간 경매| F[RTB]
+    F -->|낙찰된 광고| E1
+    F -->|낙찰된 광고| E2
+    
+    G[DMP] -->|데이터 제공| B1
+    G -->|데이터 제공| B2
+    G -->|데이터 제공| B3
+    
+    H1[사용자 1] -->|행동 데이터| G
+    H2[사용자 2] -->|행동 데이터| G
+    H1 -->|웹사이트 방문| D1
+    H2 -->|웹사이트 방문| D2
+    
+    subgraph Demand
+        A1
+        A2
+        A3
+        A4
+        B1
+        B2
+        B3
+        G
+    end
+    
+    subgraph Supply
+        D1
+        D2
+        D3
+        E1
+        E2
+    end
+    
+    style A1 fill:#ff9999
+    style A2 fill:#ff9999
+    style A3 fill:#ff9999
+    style A4 fill:#ff9999
+    style D1 fill:#99ff99
+    style D2 fill:#99ff99
+    style D3 fill:#99ff99
+    style H1 fill:#9999ff
+    style H2 fill:#9999ff
+    style B1 fill:#ffff99
+    style B2 fill:#ffff99
+    style B3 fill:#ffff99
+    style E1 fill:#ff99ff
+    style E2 fill:#ff99ff
+    style C fill:#99ffff
+    style F fill:#ffcc99
+    style G fill:#cc99ff
+```
+
 각 구성 요소 간의 상호작용을 시뮬레이션하고 Programmatic Advertising 생태계를 이해하는 데 도움이 될 수 있도록 작성해 보았습니다.
 
 - 광고주
