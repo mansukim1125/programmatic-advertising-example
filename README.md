@@ -2,6 +2,8 @@
 
 이 저장소는 Programmatic Advertising 생태계를 쉽게 이해할 수 있도록 TypeScript로 구현한 예제입니다. 코드는 아래 구성요소를 포함합니다.
 
+[Programmatic Advertising 이란?](https://until.blog/@joonseokkim/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A7%A4%ED%8B%B1-%EA%B4%91%EA%B3%A0%EC%9D%98-%EC%9D%B4%ED%95%B4)
+
 ```mermaid
 flowchart TD
     A1[광고주 A] -->|광고 집행 요청| B1[DSP 1]
