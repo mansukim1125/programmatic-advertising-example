@@ -1,6 +1,6 @@
 # Programmatic Advertising Example
 
-이 저장소는 Programmatic Advertising 생태계를 TypeScript로 구현한 예제입니다. 코드는 아래 구성요소를 포함합니다.
+이 저장소는 Programmatic Advertising 생태계를 쉽게 이해할 수 있도록 TypeScript로 구현한 예제입니다. 코드는 아래 구성요소를 포함합니다.
 
 ```mermaid
 flowchart TD
@@ -114,7 +114,7 @@ flowchart TD
    npm run start
    ```
 
-### 예상 출력
+### 시뮬레이션
 
 코드는 다음 과정을 시뮬레이션합니다.
 
